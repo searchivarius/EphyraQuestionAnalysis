@@ -17,10 +17,14 @@
 
 
 	<repositories>
-    <repository>
-      <id>oaqa</id>
-      <url>http://mu.lti.cs.cmu.edu:8081/nexus/content/groups/public</url>
-    </repository>
+      <repository>
+        <id>oaqa</id>
+        <url>http://mu.lti.cs.cmu.edu:8081/nexus/content/groups/public</url>
+      </repository>
+      <repository>
+        <id>oaqa-thirdparty</id>
+        <url>http://mu.lti.cs.cmu.edu:8081/nexus/content/repositories/thirdparty</url>
+      </repository>
 	</repositories>
 
 
@@ -96,7 +100,7 @@
 			<artifactId>lingpipe</artifactId>
 			<version>4.1.0</version>
 		</dependency>
-    <dependency>
+      <dependency>
       <groupId>org.htmlparser</groupId>
       <artifactId>htmlparser</artifactId>
       <version>2.1</version>
