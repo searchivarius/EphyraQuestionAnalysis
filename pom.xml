@@ -16,31 +16,11 @@
 	</licenses>
 
 
-
-	<scm>
-		<connection>scm:git:git@github.com:oaqa/dsoqa.git</connection>
-		<developerConnection>scm:git:git@github.com:oaqa/dsoqa.git</developerConnection>
-		<url>http://mu.lti.cs.cmu.edu:8081/nexus/content/group/course-snapshots</url>
-	</scm>
-	<distributionManagement>
-		<repository>
-			<id>deployment</id>
-			<url>http://mu.lti.cs.cmu.edu:8081/nexus/content/repositories/course-releases</url>
-		</repository>
-		<snapshotRepository>
-			<id>snapshots</id>
-			<url>http://mu.lti.cs.cmu.edu:8081/nexus/content/repositories/course-snapshots</url>
-		</snapshotRepository>
-	</distributionManagement>
 	<repositories>
-		<repository>
-			<id>oaqa</id>
-			<url>http://mu.lti.cs.cmu.edu:8081/nexus/content/repositories/releases</url>
-		</repository>
-		<repository>
-			<id>oaqa-thirdparty</id>
-			<url>http://mu.lti.cs.cmu.edu:8081/nexus/content/repositories/oaqa-thirdparty</url>
-		</repository>
+    <repository>
+      <id>oaqa</id>
+      <url>http://mu.lti.cs.cmu.edu:8081/nexus/content/groups/public</url>
+    </repository>
 	</repositories>
 
 
