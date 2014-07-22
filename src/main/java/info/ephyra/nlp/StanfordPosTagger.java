@@ -52,7 +52,7 @@ public class StanfordPosTagger  {
 	 */
 	public String[] tagPos(String[] tokens) {
 		List<HasWord> untagged = createSentence(tokens);
-		ArrayList<TaggedWord> tagged = model.tagSentence(untagged);
+		List<TaggedWord> tagged = model.tagSentence(untagged);
 		
 		String[] pos = new String[tagged.size()];
 		for (int i = 0; i < tagged.size(); i++) {

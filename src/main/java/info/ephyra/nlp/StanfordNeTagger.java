@@ -33,9 +33,11 @@ public class StanfordNeTagger {
 	 * Initializes the StanfordNeTagger (loads the model).
 	 */
 	public static boolean init() {
-		return init(CRFClassifier.DEFAULT_CLASSIFIER);
+		//return init(CRFClassifier.DEFAULT_CLASSIFIER);
+	  // The default classifier has only 3 classes, which is not cool
+	  return init("edu/stanford/nlp/models/ner/english.muc.7class.distsim.crf.ser.gz");
 	}
-	
+		
 	/**
 	 * Gets the path of the current serialized classifier.
 	 * 
@@ -164,7 +166,7 @@ public class StanfordNeTagger {
 	    return;
 	  }
 	  
-	  HashMap<String, String[]>  res = extractNEs("Nico Schlaefer arrived in the United States to study NLP at Carnegie Mellon University");
+	  HashMap<String, String[]>  res = extractNEs("Nico Schlaefer arrived in the United States to study NLP at Carnegie Mellon University in June 2010");
 	  
 	  for (Map.Entry<String,String[]> elem: res.entrySet()) {
 	    System.out.print(elem.getKey() + ": ");
