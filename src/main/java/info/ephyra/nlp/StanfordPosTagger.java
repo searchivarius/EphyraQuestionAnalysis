@@ -19,7 +19,7 @@ import edu.stanford.nlp.tagger.maxent.MaxentTagger;
 public class StanfordPosTagger  {
   static MaxentTagger model;
 
-  StanfordPosTagger() throws Exception {
+  public StanfordPosTagger() throws Exception {
     model = new MaxentTagger(MaxentTagger.DEFAULT_JAR_PATH);
     if (model == null) throw new Exception("Cannot init a model from the default location");
 	}
