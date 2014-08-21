@@ -90,6 +90,8 @@ public class WordNet implements Ontology {
 	 * @param properties property file
 	 */
 	public static boolean initialize(String properties) {
+    if (dict != null) return true;
+
 		try {
 			File file = new File(properties);
 			JWNL.initialize(new FileInputStream(file));
