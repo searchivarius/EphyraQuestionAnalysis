@@ -1,5 +1,5 @@
 EphyraQuestionAnalysis
 ======================
 
-A collection of [OpenEphyra](http://sourceforge.net/projects/openephyra/) components necessary for question analysis. To compile one needs the Maven. **You may need to set the right locale**, see [build.sh](build.sh). Most of the existing functionality can be initialized by calling the function [EphyraPart.initBasic](src/main/java/info/ephyra/EphyraPart.java#L23). Then, you can extract answer types. An example of doing so is in [QuestionAnalysis.java](src/main/java/info/ephyra/questionanalysis/QuestionAnalysis.java#L260). This class can be invoked by calling the script [quest_analysis.sh](quest_analysis.sh).
+A collection of [OpenEphyra](http://sourceforge.net/projects/openephyra/) components necessary for question analysis. To compile one needs the Maven. **You may need to set the right locale**, see [build.sh](build.sh). Most of the existing functionality can be initialized by calling the function [EphyraPart.initBasic](src/main/java/info/ephyra/EphyraPart.java#L23). Then, you can extract answer types. An example of doing so is in [QuestionAnalysis.java](src/main/java/info/ephyra/questionanalysis/QuestionAnalysis.java#L260). This class can be invoked by calling the script [run_question_analysis.sh](run_question_analysis.sh).
 
